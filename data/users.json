@@ -1,0 +1,149 @@
+[
+    {
+        "name": "Test",
+        "email": "test@test.com",
+        "password": "123456",
+        "id": "6995e4fe51afa",
+        "created_at": "2026-02-18 11:12:46"
+    },
+    {
+        "name": "Test",
+        "email": "test@test.com",
+        "password": "123456",
+        "id": "6995e699c579a",
+        "created_at": "2026-02-18 11:19:37"
+    },
+    {
+        "name": "Test",
+        "email": "test@test.com",
+        "password": "123456",
+        "id": "6995e69bc662e",
+        "created_at": "2026-02-18 11:19:39"
+    },
+    {
+        "name": "Test",
+        "email": "test@test.com",
+        "password": "123456",
+        "id": "6995e69c4d7a0",
+        "created_at": "2026-02-18 11:19:40"
+    },
+    {
+        "name": "david",
+        "email": "askdjs@gmail.com",
+        "password": "$2y$10$sxPUgOoip14etCu6czPTT.OuWqHJRwDnRc8nntzsGKljHaSDJWZ6i",
+        "id": "6995e844c750f",
+        "created_at": "2026-02-18 11:26:44"
+    },
+    {
+        "name": "david",
+        "email": "a11skdjs@gmail.com",
+        "password": "$2y$10$8Ss9uJWWqEYJOO0CDHw.oOtL1O3CGKGvWHPi1uJCh3TvOQF66vdQ2",
+        "id": "6995e97fae21c",
+        "created_at": "2026-02-18 11:31:59"
+    },
+    {
+        "name": "david",
+        "email": "a22skdjs@gmail.com",
+        "password": "$2y$10$QrDaMo6s2oiIKRmuMBA\/weugGnnis0nBNL8VlAugvxvvEc2ep4BLW",
+        "id": "6995e9c933957",
+        "created_at": "2026-02-18 11:33:13"
+    },
+    {
+        "name": "luis",
+        "email": "luis@gmail.com",
+        "password": "$2y$10$KjRVjPirc8MC6lzzqtC4ue6EnBOc0.IWiIiwX9rRAtUa\/KeVj2C2a",
+        "id": "6995ed6e9adbe",
+        "created_at": "2026-02-18 11:48:46"
+    },
+    {
+        "name": "jenan",
+        "email": "gomezsanjean@gmail.com",
+        "password": "$2y$10$2MT5.g6eqMgoKDAB9I6cIOJqkX1aoD0tlnQhgUr2DowaR5Iy3.CXm",
+        "id": "6995f7e1b2cc6",
+        "created_at": "2026-02-18 12:33:21"
+    },
+    {
+        "name": "jkhsderjh",
+        "email": "uerierh@gmail.com",
+        "password": "$2y$10$4sRh10Q2gCUMimWL2fKnfeav52nHh3uQQvMnE7h5CfWiY\/ol\/9rc2",
+        "id": "6995f9b7d2311",
+        "created_at": "2026-02-18 12:41:11"
+    },
+    {
+        "name": "juan",
+        "email": "juan@gmail.com",
+        "password": "$2y$10$gPF3Z7t13xLYCchh2xTDZuV2lKQpMELjqNAlDg2sROARrud0b\/\/d2",
+        "id": "69964265a1e37",
+        "created_at": "2026-02-18 17:51:17"
+    },
+    {
+        "name": "ramos",
+        "email": "ramos@gmail.com",
+        "password": "$2y$10$0nXzRgHcXQXl2fDATeYnXeFMquOC8Dkvd4QpT3Nfkv3.fnchFkNc6",
+        "id": "699645b5b4786",
+        "created_at": "2026-02-18 18:05:25"
+    },
+    {
+        "name": "Dramirez",
+        "email": "dramirez@gmail.com",
+        "password": "$2y$10$lf5JYBYiWJuff2HickZWfuyLzkzdHPWjh.ISx1Oka5oUOLPDxrtx2",
+        "id": "6996475b79d68",
+        "created_at": "2026-02-18 18:12:27"
+    },
+    {
+        "name": "robert",
+        "email": "robert@gmail.com",
+        "password": "$2y$10$TbHpHPbSwx7niFhTCAJwNurHgg6HbQKboCc.7hVzMojtr1pWqKMX.",
+        "id": "69965533dad11",
+        "created_at": "2026-02-18 19:11:31"
+    },
+    {
+        "name": "asd",
+        "email": "asd@gmail.com",
+        "password": "$2y$10$lJzeSm5AEXXML\/n2OAI5suhmHefU1\/9z1j3OJ4ik6qY9XWun9YDfa",
+        "id": "699659e466a07",
+        "created_at": "2026-02-18 19:31:32"
+    },
+    {
+        "name": "asdasd",
+        "email": "asdsadsada@gmail.com",
+        "password": "$2y$10$Eun7GV9HpKXP2DL8HRnX.OU0.DHU70mTRx8UWuUhHYQAyfPp3QTUy",
+        "id": "69965db9a8fbd",
+        "created_at": "2026-02-18 19:47:53"
+    },
+    {
+        "name": "maik",
+        "email": "maik@gmail.com",
+        "password": "$2y$10$QDE.qYZqMfunq475coGylOABjLJUmMPJz323LiQ1rEl0ZxqjPyEUq",
+        "id": "6996671502bfb",
+        "created_at": "2026-02-18 20:27:49"
+    },
+    {
+        "name": "gheta",
+        "email": "gheta123@hotmail.com",
+        "password": "$2y$10$F8qxFFX9hye5AShpTmN4b.G34GfWItpyi7SCxFXgb.83WBgE1tEya",
+        "id": "6996676c09a62",
+        "created_at": "2026-02-18 20:29:16"
+    },
+    {
+        "name": "asdasdasd",
+        "email": "j.honatanxd16.a@gmail.com",
+        "password": "$2y$10$4ZP854zC5x4kxjEiiLgQKexbFvdLgKkpY\/btYKAU2mQkQdYbZHqFi",
+        "id": "699668ad4d1fa",
+        "created_at": "2026-02-18 20:34:37"
+    },
+    {
+        "name": "asdasdasd",
+        "email": "ronyramos2713@gmail.com",
+        "password": "$2y$10$sp8YHyBjpSKiRI7ZdnPlOe47QyKzNvaQZYnDkfDwS7\/8v4\/2NSVdS",
+        "id": "699669302cb17",
+        "created_at": "2026-02-18 20:36:48"
+    },
+    {
+        "name": "dasdasd",
+        "email": "asdsad@gmail.com",
+        "password": "$2y$10$gm2tye2sc7PCJxhq9zZ7Aeu8yyf9gc\/re8hqUq0SNyOOHxpGoRNVu",
+        "id": "69966c4ceb0bf",
+        "created_at": "2026-02-18 20:50:04"
+    }
+]

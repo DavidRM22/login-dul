@@ -1,0 +1,244 @@
+/* ── Variables ── */
+:root {
+    --bg:       #07090f;
+    --surface:  #0d1117;
+    --surface2: #151c26;
+    --border:   rgba(96,165,250,0.12);
+    --accent:   #60A5FA;
+    --accent2:  #818cf8;
+    --text:     #e2e8f0;
+    --muted:    #64748b;
+    --error:    #f87171;
+}
+
+/* Reset básico */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* ── Background ── */
+.bg-grid {
+    position: fixed;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(96,165,250,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(96,165,250,0.04) 1px, transparent 1px);
+    background-size: 48px 48px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.glow-orb {
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(80px);
+    pointer-events: none;
+    opacity: 0.35;
+    z-index: 0;
+}
+
+.orb1 { width: 500px; height: 500px; background: #1d4ed8; top: -150px; left: -100px; }
+.orb2 { width: 400px; height: 400px; background: #4338ca; bottom: -100px; right: -80px; }
+
+/* ── Container ── */
+.container {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* ── Card ── */
+.card {
+    background: rgba(13,17,23,0.88);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 44px 40px;
+    width: 100%;
+    max-width: 500px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 60px rgba(96,165,250,0.07),
+                0 24px 48px rgba(0,0,0,0.5);
+    animation: cardIn 0.6s cubic-bezier(0.22,1,0.36,1) both;
+}
+
+@keyframes cardIn {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Header ── */
+.title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: var(--muted);
+    margin-bottom: 32px;
+}
+
+/* ── Form ── */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #94a3b8;
+    letter-spacing: 0.3px;
+}
+
+.req {
+    color: var(--error);
+}
+
+/* ── Inputs ── */
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon {
+    position: absolute;
+    left: 14px;
+    color: var(--muted);
+    pointer-events: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+    width: 100%;
+    padding: 12px 14px 12px 40px;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(96,165,250,0.1);
+}
+
+input::placeholder {
+    color: var(--muted);
+}
+
+input.invalid {
+    border-color: var(--error);
+}
+
+/* ── Toggle password ── */
+.toggle-pw {
+    position: absolute;
+    right: 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--muted);
+    transition: color 0.2s;
+    padding: 4px;
+}
+
+.toggle-pw:hover {
+    color: var(--accent);
+}
+
+.error-msg {
+    font-size: 12px;
+    color: var(--error);
+    min-height: 14px;
+}
+
+/* ── Button ── */
+.btn-primary {
+    margin-top: 10px;
+    padding: 14px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    border: none;
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.2s, transform 0.15s;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+.btn-primary:active {
+    transform: translateY(0);
+}
+
+/* ── Login link ── */
+.login-text {
+    margin-top: 24px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--muted);
+}
+
+.login-text a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.login-text a:hover {
+    text-decoration: underline;
+}
+
+/* ── Focus visible ── */
+button:focus-visible,
+input:focus-visible,
+a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 480px) {
+    .card {
+        padding: 32px 24px;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+}
