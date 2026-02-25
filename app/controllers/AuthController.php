@@ -128,7 +128,7 @@ sendOTPEmail($user['email'], $otp);
         unset($_SESSION['otp_user_id']);
         unset($_SESSION['otp_email']);
 
-        header("Location: " . BASE_URL . '/index.php?controller=auth&action=login');
+        header("Location: " . BASE_URL . '/index.php?controller=dashboard&action=index');
         exit;
     }
 

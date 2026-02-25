@@ -12,25 +12,12 @@ if (!defined('BASE_URL')) {
 
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="<?= BASE_URL ?>/css/verify.css">
-
-  <style>
-    .otp-single {
-        width: 100%;
-        padding: 14px;
-        font-size: 22px;
-        text-align: center;
-        letter-spacing: 10px;
-        border-radius: 8px;
-        border: 1px solid #ccc;
-        outline: none;
-    }
-
-    .otp-single:focus {
-        border-color: #000;
-    }
-  </style>
 </head>
 <body>
+
+<div class="bg-grid"></div>
+<div class="glow-orb orb1"></div>
+<div class="glow-orb orb2"></div>
 
 <div class="container">
   <div class="card">
@@ -40,45 +27,38 @@ if (!defined('BASE_URL')) {
       <p class="subtitle">
         Enviamos un código a<br>
         <strong>
-          <?= isset($_SESSION['otp_email']) 
-              ? htmlspecialchars($_SESSION['otp_email']) 
+          <?= isset($_SESSION['otp_email'])
+              ? htmlspecialchars($_SESSION['otp_email'])
               : 'correo@ejemplo.com' ?>
         </strong>
       </p>
     </div>
 
-    <!-- FORM SIMPLIFICADO -->
-    <form method="POST"
-          action="<?= BASE_URL ?>/index.php?controller=auth&action=doVerify">
-
+    <form id="verifyForm" class="form" method="POST" action="<?= BASE_URL ?>/index.php?controller=auth&action=doVerify">
       <div class="field-group">
-        <label for="otp">Código de verificación</label>
-        <input 
-            type="text"
-            name="otp"
-            id="otp"
-            class="otp-single"
-            maxlength="6"
-            pattern="\d{6}"
-            inputmode="numeric"
-            placeholder="123456"
-            required
-            autocomplete="one-time-code"
-        >
+        <label for="otp-0">Código de verificación</label>
+
+        <div class="otp-group" aria-label="Ingresa los 6 dígitos del código">
+          <input type="text" id="otp-0" class="otp-input" maxlength="1" inputmode="numeric" autocomplete="one-time-code" required>
+          <input type="text" id="otp-1" class="otp-input" maxlength="1" inputmode="numeric" required>
+          <input type="text" id="otp-2" class="otp-input" maxlength="1" inputmode="numeric" required>
+          <input type="text" id="otp-3" class="otp-input" maxlength="1" inputmode="numeric" required>
+          <input type="text" id="otp-4" class="otp-input" maxlength="1" inputmode="numeric" required>
+          <input type="text" id="otp-5" class="otp-input" maxlength="1" inputmode="numeric" required>
+        </div>
+
+        <input type="hidden" name="otp" id="otpHidden">
       </div>
 
-      <div class="error-text">
-        <!-- Aquí puedes imprimir errores si luego decides pasarlos por sesión -->
-      </div>
+      <div class="error-msg" id="otpError" aria-live="polite"></div>
 
       <button type="submit" class="btn-primary">
         Verificar código
       </button>
-
     </form>
 
     <div class="footer-actions">
-      <a href="<?= BASE_URL ?>/index.php?controller=auth&action=login">
+      <a class="btn-back" href="<?= BASE_URL ?>/index.php?controller=auth&action=login">
         Volver al inicio de sesión
       </a>
     </div>
@@ -86,5 +66,6 @@ if (!defined('BASE_URL')) {
   </div>
 </div>
 
+<script src="<?= BASE_URL ?>/js/verify.js"></script>
 </body>
 </html>
