@@ -15,6 +15,10 @@ if (!defined('BASE_URL')) {
 </head>
 <body>
 
+<div class="bg-grid"></div>
+<div class="glow-orb orb1"></div>
+<div class="glow-orb orb2"></div>
+
 <div class="container">
   <div class="card">
 
