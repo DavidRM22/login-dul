@@ -157,6 +157,18 @@ body {
     gap: 16px;
 }
 
+.field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.field-group label {
+    font-size: 13px;
+    color: var(--muted);
+    text-align: center;
+}
+
 /* ── OTP inputs ── */
 .otp-group {
     display: flex;
@@ -289,7 +301,7 @@ body {
 .footer-actions {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 4px;
 }
 
